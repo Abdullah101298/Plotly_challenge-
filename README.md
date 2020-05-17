@@ -34,6 +34,12 @@ We are exploring different bacteria found in different subjects belly button to 
   <li> Use otu_ids for the marker colors.
   
   <li> Use otu_labels for the text values.
+  
+#### Metadata information 
+
+  <li> Display the sample metadata, i.e., an individual's demographic information.
+
+  <li> Display each key-value pair from the metadata JSON object somewhere on the page.
 
 
 
