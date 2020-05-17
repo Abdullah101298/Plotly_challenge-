@@ -1,4 +1,4 @@
-# Plotly Challenge 
+# Plotly Challenge - Belly Button Bacteria Dashboard
 <br>
 
 <img src = "https://www.sciencenews.org/wp-content/uploads/2019/05/050819_ti_fecaltransplant_feat.jpg" height = 300 width = 500 >
