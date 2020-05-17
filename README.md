@@ -10,16 +10,19 @@
 
 We are exploring different bacteria found in different subjects belly button to explore if some belly button bacteria are common amongst different people. 
 
-#### Step 1: Bar and Bubble Charts 
+### Step 1: Bar and Bubble Charts
+<br> 
 
-<li> Use the D3 library to read in samples.json.
+#### Bar Chart 
+
+  <li> Use the D3 library to read in samples.json.
   
-  Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+  <li> Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
 
-  Use sample_values as the values for the bar chart.
+  <li> Use sample_values as the values for the bar chart.
 
-  Use otu_ids as the labels for the bar chart.
+  <li> Use otu_ids as the labels for the bar chart.
 
-  Use otu_labels as the hovertext for the chart.
+  <li> Use otu_labels as the hovertext for the chart.
 
 
