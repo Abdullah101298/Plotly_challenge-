@@ -4,20 +4,26 @@ function plotcreator(id) {
     d3.json("data.json").then((data) => {
         console.log(data);
     
+    var samples = data.samples
+
+    // filtering the data by the id 
+    var result = samples.filter(ids => ids.id.toString() === id)[0];
+    console.log(result)
+
     // Defining the count of otu labels 
-    var samplevalues = data.samples[0]['sample_values'];
+    var samplevalues = result['sample_values'];
     console.log(samplevalues)
     
     // Slicing the variable from above. 
-    var slicevals = data.samples[0]['sample_values'].slice(0, 10).reverse()
+    var slicevals = result['sample_values'].slice(0, 10).reverse()
     console.log(slicevals)
 
     // Isolating the otu ids from the json files
-    var samplelabels = data.samples[0]['otu_ids'];
+    var samplelabels = result['otu_ids'];
     console.log(samplelabels)
 
     // Slicing the above variable
-    var slicelabels = data.samples[0]['otu_ids'].slice(0, 10).reverse()
+    var slicelabels = result['otu_ids'].slice(0, 10).reverse()
     console.log(slicelabels)
 
     // Mapping it to a format that we want it 
@@ -48,6 +54,12 @@ function plotcreator(id) {
         width: 1200
         };
 
+     // Grabbing the bar id from the html code 
+    var barchart = d3.select(".bar");
+    
+    // Empty the bar plot
+    barchart.html("");
+
     // create the bar plot
     Plotly.newPlot("bar", data, layout);
 
@@ -72,9 +84,14 @@ function plotcreator(id) {
         height: 500,
         width: 1200
     };
-
+     
+    // Grabbing the bubble id from the html code 
+    var bubblechart = d3.select(".bubble_chart");
+    
+    // Empty the previous bubble chart
+    bubblechart.html("");
+    
     // create bubble plot 
-
     Plotly.newPlot('bubble_chart', data1, layout1);
 
     })
@@ -125,7 +142,8 @@ function runids(id) {
 
 }
 
-
+// Defining a function to initialize the script by creating and characteriing the 
+// dropdown as well as calling the two above function. 
 function initial() {
 
     var dropdown = d3.select("#ids_drop");
