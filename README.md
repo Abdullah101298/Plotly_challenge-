@@ -10,7 +10,7 @@
 
 We are exploring different bacteria found in different subjects belly button to explore if some belly button bacteria are common amongst different people. 
 
-## Step 1: Bar and Bubble Charts
+### Step 1: Bar and Bubble Charts
 <br> 
 
 #### Bar Chart 
@@ -23,5 +23,15 @@ We are exploring different bacteria found in different subjects belly button to 
   <li> Use otu_ids as the labels for the bar chart.
 
   <li> Use otu_labels as the hovertext for the chart.
+  
+#### Bubble Chart 
+  <li> Use otu_ids for the x values.
+  <li> Use sample_values for the y values.
+  <li> Use sample_values for the marker size.
+  <li> Use otu_ids for the marker colors.
+  <li> Use otu_labels for the text values.
+
+
+
 
 
