@@ -26,9 +26,13 @@ We are exploring different bacteria found in different subjects belly button to 
   
 #### Bubble Chart 
   <li> Use otu_ids for the x values.
+  
   <li> Use sample_values for the y values.
+  
   <li> Use sample_values for the marker size.
+  
   <li> Use otu_ids for the marker colors.
+  
   <li> Use otu_labels for the text values.
 
 
